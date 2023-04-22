@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 53, 54);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+section {
+    margin: 5px;
+    padding: 24px;
+    background-color: rgb(39, 43, 55);
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    color:  rgb(30, 89, 216);
+    text-align: center;
+    text-transform: uppercase; /* convierte la letra en mayusculas */
+}
+
+h4{
+    color: rgb(192, 30, 165);
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+
+.contenedor-main {
+    margin: 5px;
+    height: 230px;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(39, 43, 55);
+    flex-direction: column;
+    align-items: center; /*los ordena de manera vertical*/
+    
+}
+
+.informacionPersonal h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.informacionPersonal p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.contenedor-main img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5%;
+    margin-top: 16px;
+}
+
+.container-columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-columns .column{
+    width: 50%;
+}
+
+.aboutMe {
+    height: 200px;
+}
+
+.skills{
+    height: 200px;
+}
+
+.reference {
+    height: 200px;
+}
+
+.skills .list {
+    padding-left: 16px;
+}
+
+
+.reference .reference-columns{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.reference .reference-columns div {
+    width: 50%;
+}
+
+.experience {
+    padding: 16px;
+    height: 720px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer div{
+    width: 50%;
+}
+
+.footer span{
+    padding: 5px 0px; 
+    display: block;
+}
+
+.imgcel {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    padding: 5px;
+
+      
+
+}
+    
+@media screen and (min-width: 480px) and  (max-width: 800px){
+
+    .container-columns {
+        flex-direction: column;
+    }
+    .container-columns .column{
+        width: 100%;
+    }
+
+    .experience {
+        
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container-columns {
+        flex-direction: column;
+    }
+    .container-columns .column{
+        width: 100%;
+    }
+
+
+    .experience {
+        height: 750px;
+    }
+}
